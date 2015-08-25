@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Teclado {
+
+	Scanner tc=new Scanner(System.in);
+	public int lerInt(){
+		System.out.println("Digite um numero inteiro:");
+		int n=tc.nextInt();
+		return n;
+	}
+	
+	
+}
