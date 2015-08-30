@@ -1,0 +1,13 @@
+
+public class Testa {
+
+	public static void main(String[] args){
+
+		Teclado tc=new Teclado();
+
+		tc.lerInt();
+		tc.lerInt(5);
+		tc.lerInt("ba");
+		tc.lerInt("be", 2);
+}
+}

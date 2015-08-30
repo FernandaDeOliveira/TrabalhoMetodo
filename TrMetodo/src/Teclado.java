@@ -76,25 +76,45 @@ public class Teclado {
 	
 	/////Char/////
 	public char lerChar(){
+		char c=0;
 		System.out.println("Digite um caracter :");
-		char c=tc.nextLine();
-		return num;
+		c=tc.next().charAt(0);
+		return c;
 	}
 	
 	public void lerChar(char c){
-		System.out.println("Digite um caracter");
-	    c=tc.nextDouble();	
+		c=lerChar();
 	}
 	
 	public void lerChar(String a,char c){
-		a=tc.nextLine();
-		c=tc.nextDouble();
-		System.out.println(a + num);
+		c=tc.next().charAt(0);
+		System.out.println(a);
 	}
 	
 	public void lerChar(String a){
 		System.out.println(a);			
 	}
+	///////
 	
+	/////String/////
+	public String lerString(){
+		System.out.println("Digite uma string :");
+		String a=tc.nextLine();
+		return a;
+	}
+	
+	public void lerString(String a){
+		System.out.println("Digite uma string");
+	    a=tc.nextLine();	
+	}
+	
+	public void lerString(String a,String b){
+		b=tc.nextLine();
+		System.out.println(a);
+	}
+	
+	public void lerStringImprime(String a){
+		System.out.println(a);			
+	}
 	
 }
